@@ -1,7 +1,7 @@
 export class Particle2 {
     constructor(ctx, mouse, canvas) {
-        this.x = Math.random() * canvas.width;
-        this.y = Math.random() * canvas.height;;
+        this.x = mouse.x + Math.random() * canvas.width;
+        this.y = mouse.y +  Math.random() * canvas.height;;
         this.size = Math.random() * 5 + 2;
         this.color = "white";
         this.weight = 1;
